@@ -27,15 +27,7 @@ body .container
 }
 .containerL
 {
-    /* width: 32vw;
-    height: 100vh;
-    backdrop-filter: blur(10px);
-    justify-content: center;
-    border: 0.5px solid rgba(105, 102, 102, 0.2);
-    background: radial-gradient(at 50% 0% rgba(0,0,0,0),rgba(46, 44, 44, 0.2));
-    display: flex; */
-    
-      width: 32vw;
+      width: 50%;
       height: 100vh;
       background-color: rgba(80,80,80, 0.1);
       -webkit-backdrop-filter: blur(5px);
@@ -44,56 +36,61 @@ body .container
 }  
 .containerR
 {
-     width: 68%;
-    display: flex;      
+    width: 100%;
+    background-color: rgba(0,0,0, 0.2);
+    padding: 50px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;     
 }
+
 .containerR .text{
-   color: aliceblue;
-    position:absolute;
-     top:5%;
-     left:36%;
-     translate :(-50%,-50%);
-     font-size: 1.4rem; 
-    font-weight: lighter;
-    letter-spacing: 0.11rem;
+   font-family: Gilroy;
+   color: white;
+   font-size: 20px;
 }
+
 .containerR .degree{
+  padding-right: 30px;
     color: white;
-    font-size: 6rem;
-    font-weight: 25rem; 
-    font-family: sans-serif;
-    position:absolute;
-    top:65%;
-    left:56%;
-    translate :(-50%,-50%);   
-}
-.containerR .icon
-{
-    position:absolute;
-    top:65%;
-    left:44%;
-    width:150px;
-    height:150px;
-}
-.containerR .info {
-        
-         position:absolute;
-         top:65%;
-         left:74%;
-         translate :(-50%,-50%);
+    font-size: 120px;
+    
+    font-family: Gilroy;
      
 }
+
+.containerR .icon
+{   padding-right: 30px;
+    width:100px;
+    height:100px;
+}
+
+.containerR .info {
+    padding-right:30px ;
+}
+
 .containerR .info .city{ 
-    color:#f4f4f4;
-    font-size: 3rem;
-    letter-spacing: 0.15rem;
+    color:white;
+    font-family: MontserratS;
+    font-size: 50px;
+    
 }
 .containerR .info .date
 {
-    color:#f4f4f4;
-    font-size: 1.2rem;
-    letter-spacing: 0.1rem;
+    color:white;
+    font-family: Montserrat;
+    font-size: 18px;
 }
+    
+
+.weather-card{
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
 .info-container{
   padding: 60px;
 }
