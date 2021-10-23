@@ -11,22 +11,13 @@
   font-family: Montserrat;
 }
 
-
-.container
-{
-  width: 32vw;
-  height: 100vh;
-  background-color: rgba(60,60,60, 0.4);
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter:blur(10px) ;
-  border: 0.5px solid rgba(58, 46, 46, 0.2)  
-} 
 *{
   margin:0;
   padding:0;
 }
-body
+body .container
 {
+  display: flex;
   background-image: url(./assets/priscilla-du-preez-MU93ZoQPNB8-unsplash.jpg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -34,5 +25,153 @@ body
   background-attachment: fixed; 
   overflow: hidden;
 }
+.containerL
+{
+    /* width: 32vw;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+    justify-content: center;
+    border: 0.5px solid rgba(105, 102, 102, 0.2);
+    background: radial-gradient(at 50% 0% rgba(0,0,0,0),rgba(46, 44, 44, 0.2));
+    display: flex; */
+    
+      width: 32vw;
+      height: 100vh;
+      background-color: rgba(80,80,80, 0.1);
+      -webkit-backdrop-filter: blur(5px);
+      backdrop-filter:blur(10px);
+      
+}  
+.containerR
+{
+     width: 68%;
+    display: flex;      
+}
+.containerR .text{
+   color: aliceblue;
+    position:absolute;
+     top:5%;
+     left:36%;
+     translate :(-50%,-50%);
+     font-size: 1.4rem; 
+    font-weight: lighter;
+    letter-spacing: 0.11rem;
+}
+.containerR .degree{
+    color: white;
+    font-size: 6rem;
+    font-weight: 25rem; 
+    font-family: sans-serif;
+    position:absolute;
+    top:65%;
+    left:56%;
+    translate :(-50%,-50%);   
+}
+.containerR .icon
+{
+    position:absolute;
+    top:65%;
+    left:44%;
+    width:150px;
+    height:150px;
+}
+.containerR .info {
+        
+         position:absolute;
+         top:65%;
+         left:74%;
+         translate :(-50%,-50%);
+     
+}
+.containerR .info .city{ 
+    color:#f4f4f4;
+    font-size: 3rem;
+    letter-spacing: 0.15rem;
+}
+.containerR .info .date
+{
+    color:#f4f4f4;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+}
+.info-container{
+  padding: 60px;
+}
 
+.secondary-txt{
+  font-size: 18;
+  font-family: Montserrat;
+  color: white;
+  opacity: 0.3;
+}
 
+.search{
+  display: flex;
+}
+
+.search-bar{
+  font-size: 12px;
+  font-family: Montserrat;
+  color:white;
+  background-color: transparent;
+  border-bottom: 0.001em solid rgba(256,256,256, 0.5);
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  height: 42px;
+  width: 100%;
+  outline: none;
+}
+
+.search-button{
+  height: 42px;
+  width: 46px;
+  background-color: white;
+  border: none;
+  
+}
+
+.search-suggestion{
+  font-size: 12px;
+  font-family: Montserrat;
+  color: white;
+  opacity: 0.3;
+  padding-top: 24px;
+}
+
+.horizontal-divide{
+  margin-top: 30px;
+  height: 0.05em;
+  background-color: white;
+  opacity: 0.5;
+  width: 100%;
+}
+
+.info-panel-heading{
+  margin-top: 50px;
+  padding-bottom: 20px;
+  font-family: MontserratS;
+  color: white;
+  font-size: 20px;
+}
+
+.details-card{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.details-element{
+  font-family: Montserrat;
+  color: white;
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+.details-element-value{
+  font-family: MontserratS;
+  color: white;
+  font-size: 14px;
+}
